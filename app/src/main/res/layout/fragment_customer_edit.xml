@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cyplay_vlight_gray"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/customer_information_form_cell"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/customer_information_form_cell"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginRight="11dp"
+                            android:layout_marginTop="11dp"
+                            android:text="@string/customer_information_form_id"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/cyplay_light_blue" />
+
+                        <TextView
+                            android:id="@+id/id_editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="11dp"
+                            android:background="#00000000"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customer_information_form_cell"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/customer_information_form_cell">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginTop="11dp"
+                            android:text="@string/customer_information_form_civility"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/cyplay_light_blue"
+
+
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal|right">
+
+                            <Spinner
+                                android:id="@+id/civility_spinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="11dp"
+                                android:background="#00000000"
+                                android:gravity="center_vertical|center_horizontal|right"
+                                android:paddingRight="0dp"
+                                android:spinnerMode="dialog" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/customer_information_form_cell"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginRight="11dp"
+                            android:layout_marginTop="11dp"
+                            android:text="@string/customer_information_form_lname"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/cyplay_light_blue" />
+
+                        <EditText
+                            android:id="@+id/lname_editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="11dp"
+                            android:background="#00000000"
+                            android:inputType="textPersonName"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/customer_information_form_cell"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginRight="11dp"
+                            android:layout_marginTop="11dp"
+                            android:text="@string/customer_information_form_fname"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/cyplay_light_blue" />
+
+                        <EditText
+                            android:id="@+id/fname_editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="11dp"
+                            android:background="#00000000"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/customer_information_form_cell"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginTop="11dp"
+                            android:text="@string/customer_information_form_bday"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/cyplay_light_blue" />
+
+
+                        <TextView
+                            android:id="@+id/bday_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="11dp"
+                            android:ems="15"
+                            android:gravity="right|end"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/cyplay_light_gray"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customer_information_form_cell"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/customer_information_form_cell">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginRight="11dp"
+                            android:layout_marginTop="11dp"
+                            android:text="@string/customer_information_form_ctry"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/cyplay_light_blue" />
+
+                        <EditText
+                            android:id="@+id/ctry_editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="11dp"
+                            android:background="#00000000"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/customer_information_form_cell"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginRight="11dp"
+                            android:layout_marginTop="11dp"
+                            android:text="@string/customer_information_form_zcode"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/cyplay_light_blue" />
+
+                        <EditText
+                            android:id="@+id/zcode_editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="11dp"
+                            android:background="#00000000"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/customer_information_form_cell"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginRight="11dp"
+                            android:layout_marginTop="11dp"
+                            android:text="@string/customer_information_form_city"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/cyplay_light_blue" />
+
+                        <EditText
+                            android:id="@+id/city_editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="11dp"
+                            android:background="#00000000"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/customer_information_form_cell"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginRight="11dp"
+                            android:layout_marginTop="11dp"
+                            android:text="@string/customer_information_form_address"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/cyplay_light_blue" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="11dp"
+                            android:background="#00000000"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="text"
+
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/customer_information_form_cell"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/address1_editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginRight="11dp"
+                            android:layout_marginTop="11dp"
+                            android:background="#00000000"
+                            android:ems="10"
+                            android:inputType="textPostalAddress" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/customer_information_form_cell"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/address2_editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginRight="11dp"
+                            android:layout_marginTop="11dp"
+                            android:background="#00000000"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/customer_information_form_cell"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/address3_editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginRight="11dp"
+                            android:layout_marginTop="11dp"
+                            android:background="#00000000"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customer_information_form_cell"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/customer_information_form_cell"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginTop="11dp"
+                        android:text="@string/customer_information_form_email"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/cyplay_light_blue" />
+
+                    <EditText
+                        android:id="@+id/email_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="11dp"
+                        android:background="#00000000"
+                        android:ems="10"
+                        android:inputType="textEmailAddress" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customer_information_form_cell"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/customer_information_form_cell"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginTop="11dp"
+                        android:text="@string/customer_information_form_lnumber"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/cyplay_light_blue" />
+
+                    <EditText
+                        android:id="@+id/lnumber_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="11dp"
+                        android:background="#00000000"
+                        android:ems="10"
+                        android:inputType="phone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/customer_information_form_cell"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginTop="11dp"
+                        android:text="@string/customer_information_form_mnumber"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/cyplay_light_blue" />
+
+                    <EditText
+                        android:id="@+id/mnumber_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="11dp"
+                        android:background="#00000000"
+                        android:ems="10"
+                        android:inputType="phone"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/customer_information_form_cell"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginTop="11dp"
+                        android:text="@string/customer_information_form_wnumber"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/cyplay_light_blue" />
+
+                    <EditText
+                        android:id="@+id/wnumber_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="11dp"
+                        android:background="#00000000"
+                        android:ems="10"
+                        android:inputType="phone"
+
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:id="@+id/progress_bar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/cyplay_splash"
+        />
+
+    <ProgressBar
+        android:id="@+id/splash_progress_bar"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:indeterminate="true"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/reload_view"
+        android:visibility="gone"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/reload_text"
+            android:layout_gravity="center|bottom"
+            android:text="@string/reload_error_msg"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/AntiqueWhite"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/reload_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reload_button_text"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:visibility="visible"
+            android:layout_marginBottom="60dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

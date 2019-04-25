@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?><!--FRENCH VERSION -->
+
+<resources>
+
+    <string name="activity_authentication">Authentification</string>
+    <string name="activity_catalogue">Catalogue</string>
+    <string name="activity_device_registration">Enregistrement de device</string>
+    <string name="activity_home">Accueil Vendeur</string>
+    <string name="activity_product">Produits</string>
+    <string name="activity_gallery">Galerie</string>
+    <string name="activity_customer_search">Recherche Client</string>
+    <string name="activity_customer">Client</string>
+
+    <string name="app_name">Play Retail Api</string>
+    <string name="action_settings">Parametre</string>
+
+    <string name="in_progress_purchase">En cours</string>
+    <string name="purchase_to_pick_up">A retirer</string>
+    <string name="customer_info">Client</string>
+    <string name="playlist">Recommendations</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="offer">Offres</string>
+    <string name="purchase">Historique</string>
+
+    <string name="customer_search">Nom &#8230;</string>
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="drawer_shop">shop</string>
+
+
+    <string name="write_your_message">Écrivez votre message</string>
+    <string name="send_your_message">Envoyer un message</string>
+
+    <string name="reload">Relancer</string>
+
+    <string name="cancel">Annuler</string>
+    <string name="confirm">Confirmer</string>
+    <string name="ask_sure">Êtes-vous sûr de vouloir quitter l\'application ?</string>
+
+    <string name="basket_purchase_finish">Achat(s) effectué(s)</string>
+
+    <string name="message_to_manager">Message</string>
+    <string name="not_sending_message">Attention le message ne sera pas envoyé &#8230;</string>
+
+    <string name="seller_home_title">Accueil</string>
+    <string name="home_team">Equipe</string>
+    <string name="ok">Ok</string>
+    <string name="warning">Attention</string>
+
+    <string name="no_client_context">Vous n\'êtes pas dans un context client, voulez vous rechercher un Client ?</string>
+    <string name="yes_thx">Oui</string>
+    <string name="no_thx">Non</string>
+    <string name="anonymouslike">"Like anonyme effectué pour :"</string>
+    <string name="anonymousdislike">"DisLike anonyme effectué pour :"</string>
+
+    <string name="all">Tous</string>
+    <string name="catalogue">Catalogue</string>
+
+    <string name="customer_pts">POINTS</string>
+    <string name="customer_freq">FREQ.</string>
+    <string name="customer_pts_gold">PTS GOLD</string>
+
+    <string name="home_bottom_customer_history">Historique Client</string>
+    <string name="home_bottom_customer_inhouse">Client en Magasin</string>
+
+
+    <string name="product_summary">Résumé</string>
+    <string name="product_model">Modèles</string>
+    <string name="product_price">Prix</string>
+    <string name="product_associate">Associés</string>
+
+    <string name="product_sku_buy">Ajouter au panier</string>
+    <string name="product_sku_reserve">Reserver</string>
+    <string name="product_sku_command">Commander</string>
+
+    <string name="product_reserved">Produit reservé</string>
+    <string name="product_ordered">Product commandé</string>
+
+    <string name="product_model_word">"Modèles :"</string>
+
+    <string name="current_shop">Magasin actuel</string>
+
+    <string name="history_title">Historique Client</string>
+    <string name="history_no_customer">"Aucun client conseillé aujourd\'hui"</string>
+
+    <string name="no_customer_in_shop">Aucun client n\'est actuellement idenfitié en magasin</string>
+
+    <string name="date_jan">Janvier</string>
+    <string name="date_feb">Février</string>
+    <string name="date_mar">Mars</string>
+    <string name="date_apr">Avril</string>
+    <string name="date_may">Mai</string>
+    <string name="date_jun">Juin</string>
+    <string name="date_jul">Juillet</string>
+    <string name="date_aug">Août</string>
+    <string name="date_sep">Septembre</string>
+    <string name="date_oct">Octobre</string>
+    <string name="date_nov">Novembre</string>
+    <string name="date_dec">Décembre</string>
+
+    <!-- Offers Strings -->
+    <string name="offer_1">BONS DE RÉDUCTION</string>
+    <string name="offer_2">BOUTIQUE CADEAUX GOLD</string>
+    <string name="offer_3">OFFRES ANNIVERSAIRE</string>
+    <string name="offer_4">OFFRES SPÉCIALES</string>
+    <string name="offer_5">OFFRES CADEAUX</string>
+
+    <!--Client profile-->
+    <string name="customerprofile_address_button">ADRESSE</string>
+    <string name="customerprofile_email_button">EMAIL</string>
+    <string name="customerprofile_phone_button">PHONE</string>
+    <string name="empty_offres_profile">"Pas d'Offre disponnible"</string>
+    <string name="empty_playlist_profile">Pas de Playlist disponnible</string>
+
+    <!--Client Information -->
+    <string-array name="customer_info_civility">
+        <item>Mademoiselle</item>
+        <item>Madame</item>
+        <item>Monsieur</item>
+    </string-array>
+    <string-array name="customer_info_civ">
+        <item>Mlle</item>
+        <item>Mme</item>
+        <item>M</item>
+    </string-array>
+    <string name="customer_information_form_civility">"Civilité"</string>
+    <string name="customer_information_form_lname">"Nom"</string>
+    <string name="customer_information_form_fname">"Prénom"</string>
+    <string name="customer_information_form_bday">"Date de naissance"</string>
+    <string name="customer_information_form_ctry">"Pays"</string>
+    <string name="customer_information_form_zcode">"Code postal"</string>
+    <string name="customer_information_form_city">"Ville"</string>
+    <string name="customer_information_form_address">"Adresse"</string>
+    <string name="customer_information_form_email">"E-Mail"</string>
+    <string name="customer_information_form_lnumber">"Téléphone fixe"</string>
+    <string name="customer_information_form_mnumber">Téléphone portable"</string>
+    <string name="customer_information_form_wnumber">"Téléphone professionel"</string>
+    <string name="customer_information_back_title">"Détails Client"</string>
+    <string name="customer_information_back">"Voulez-vous vraiment annuler la modification?"</string>
+
+    <string name="cart_delete_all_items_title">"Attention"</string>
+    <string name="cart_delete_all_items_desc">"Vous êtes sur le point de supprimer le caddie"</string>
+
+    <!--Scan  strings -->
+    <string name="light">Lampe</string>
+    <string name="scan_helptext">"Le code à barres doit être en position verticale.\nÉviter l'éblouissement et l'ombre."</string>
+    <string name="scan_newcustomer_title">"Adhésion"</string>
+    <string name="scan_newcustomer">"Voulez-vous procéder à l'adhésion du client?" </string>
+    <string name="scan_errormsg_title">"Erreur" </string>
+    <string name="scan_errormsg">"Le code que vous avez scanné est invalide.\n Voulez-vous effectuer un nouveau scan? "</string>
+    <string name="retry_button_txt" >"Réessayer" </string>
+    <string name="errorscreen_msg" >"Vérifier la connexion et réessayez"</string>
+    <string name="scan_customer_errormsg">"Le code que vous avez scanné n\' est pas un client valide.\n Voulez-vous effectuer un nouveau scan? "</string>
+    <string name="scan_product_errormsg">"Le code que vous avez scanné n\' est pas un produit valide.\n Voulez-vous effectuer un nouveau scan? "</string>
+    <string name="picture_not_save">Attention, la photo ne sera pas sauvegardé &#8230;</string>
+    <string name="title_activity_config_screen">Parametre</string>
+    <string name="pictore_crop">Redimensionner la photo</string>
+    <string name="modify_picture">Modifier la photo</string>
+    <string name="home_statistics">Statistiques</string>
+    <string name="activity_contact_manager">Contacter un Manager</string>
+    <string name="message_sent">Message envoyé</string>
+    <string name="activity_statistics">Statistiques</string>
+    <string name="back_logout">Pressez retour une seconde fois pour logout</string>
+    <string name="back_quit">Pressez retour une seconde fois pour quitter l\'application</string>
+    <string name="activity_crop">Crop</string>
+    <string name="activity_scanner">Scanner</string>
+    <string name="activity_sellers">Vendeurs</string>
+    <string name="activity_basket">Panier</string>
+    <string name="basket_confirm_buy">Confirmer les achats</string>
+    <string name="loading">Chargement</string>
+    <string name="wait_serv_resp">En attente du serveur &#8230;</string>
+    <string name="filters_show">Voir les filtres</string>
+    <string name="filters_hide">Cacher les filtres</string>
+    <string name="filter_price">Prix (€)</string>
+    <string name="activity_filter">Filtres Catalogue</string>
+    <string name="filter_display_more">Voir plus</string>
+    <string name="add_newcustomer_popup_title">"Adhésion"</string>
+    <string name="add_newcustomer_popup_text">"Voulez-vous procéder à l'adhésion du client?"</string>
+    <string name="barcode_notfound_popup_title">"Code non valide"</string>
+    <string name="barcode_notfound_popup_text">"Le code scanné n'est pas valide"</string>
+    <string name="app_version_warning_popup_title">Warnning de version </string>
+    <string name="app_version_error_popup_title">Ereeur de version</string>
+    <string name="add_to_basket">"a été ajouté au panier"</string>
+    <string name="reload_error_msg">"Il y a eu un problème de connexion au serveur"</string>
+    <string name="reload_button_text">"Toucher pour réessayer"</string>
+    <string name="home_no_tweet">"Dans l'attente de nouveaux tweets"</string>
+    <string name="update_customer_success">"Informations sauvegardées avec succès"</string>
+    <string name="customer_information_form_id">EAN</string>
+    <string name="activity_skuList">List de Sku</string>
+    <string name="home_contact_manager">Contacter le Manager</string>
+    <string name="catalogue_search">Recherche …</string>
+    <string name="search_products">Recherche de produit</string>
+    <string name="desc_search_products">Tapez le nom d\'un produit</string>
+    <string name="no_prefill" />
+    <string name="customer_profile_offers_title">OFFRES</string>
+    <string name="customer_profile_playlist_title">PLAYLIST</string>
+    <string name="basket_alt">Panier</string>
+    <string name="home_tweet_list">Liste de Tweets</string>
+    <string name="home_log_out">Déconnexion</string>
+    <string name="genericSuccess">Succès</string>
+    <string name="genericError">Une erreur est survenue</string>
+    <string name="hello_world">Hello World</string>
+    <string name="activity_tweets_list">Tweets list</string>
+    <string name="activity_customer_history">Historique Client</string>
+    <string name="activity_in_shop_customer">En magasin</string>
+    <string name="empty_playlist">Pas d\'élément dans la Playlist pour l\'instant</string>
+    <string name="empty_wishlist">Pas d\'élément dans la Wishlist pour l\'instant</string>
+    <string name="empty_sales_history">Pas d\'élément dans la Wishlist pour l\'instant, à vous de jouer</string>
+    <string name="sku_add_to_cart">AJOUTER AU PANIER</string>
+    <string name="activity_payment">Paiement</string>
+    <string name="activity_signature">Signature</string>
+    <string name="activity_receip">Reçu</string>
+    <string name="signature_drawing_text">Confirmer le paiement\n par signature</string>
+    <string name="title_error">Erreur</string>
+    <string name="open_location_settings"></string>
+    <string name="offer_valid">Validité</string>
+    <string name="bluetooth_error_message">Veuillez activer le bluetooth et associez l\'appareil</string>
+    <string name="bluetooth_error_title">Erreur de bluetooth</string>
+    <string name="bluetooth_open_settings">Paramètre</string>
+    <string name="empty_cart">Votre panier est vide</string>
+    <string name="location_error_message">Veuillez activer votre localisation dans les paramètres de votre appareil</string>
+    <string name="location_error_title">Erreur de localisation</string>
+    <string name="offer_until">" au : "</string>
+    <string name="generic_connection_error">Une erreur est survenu, veuillez vérifier votre connexion internet</string>
+    <string name="home_title_client">Clients</string>
+    <string name="home_title_scan">Scan</string>
+    <string name="home_title_tweet">Tweets</string>
+    <string name="home_title_catalog">Catalogue</string>
+    <string name="home_catalog_historic">Historique</string>
+    <string name="home_catalog_inShop">InShop</string>
+    <string name="activity_form">Form</string>
+    <string name="form_required_error">Ce champs est requis</string>
+    <string name="menu_sellers_refresh">Reload</string>
+
+    <!-- Form -->
+
+    <string name="customerCreationForm">Création client</string>
+    <string name="customerUpdateForm">Mise-à-jour client</string>
+
+    <string name="profileSectionTag">Profile</string>
+    <string name="addressSectionTag">Adresse</string>
+    <string name="contactsSectionTag">Contacts</string>
+    <string name="emailSectionTag">Emails</string>
+    <string name="AddRowButton_emailSectionTag">Ajouter e-mail</string>
+
+    <string name="civilityRowTag">Civilité</string>
+    <string name="firstNameRowTag">Prénom</string>
+    <string name="extraNameRowTag">Extra name</string>
+    <string name="lastNameRowTag">Nom</string>
+    <string name="birthdateRowTag">Date de naissance</string>
+    <string name="emailRowTag">Email</string>
+    <string name="typologyRowTag">Typologie</string>
+    <string name="addressRowTag">Adresse</string>
+    <string name="zipCodeRowTag">Code postal</string>
+    <string name="cityRowTag">Ville</string>
+    <string name="countryRowTag">Pays</string>
+    <string name="landlineNumberRowTag">Fixe</string>
+    <string name="mobileNumberRowTag">Portable</string>
+    <string name="workNumberRowTag">Professionel</string>
+
+    <string name="privatePersonKey">Particulier</string>
+    <string name="professionalKey">Professionel</string>
+    <string name="studentKey">Étudiant</string>
+    <string name="monsieurKey">M</string>
+    <string name="madameKey">Mme</string>
+    <string name="otherKey">Autre</string>
+
+    <string name="form_next_button">Suivant</string>
+    <string name="form_save_button">Enregistrer</string>
+
+</resources>

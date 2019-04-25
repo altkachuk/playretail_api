@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|end"
+    android:gravity="center_horizontal|end"
+    android:padding="5dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+    
+    <ImageView
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/image_view"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/icon_recurring_product"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_recurring_product_topright"
+            android:visibility="gone" />
+
+        <ninja.cyplay.com.playretail_api.ui.component.AutoResizeTextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view" />
+
+    </LinearLayout>
+
+</LinearLayout>

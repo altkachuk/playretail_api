@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="@color/Black"
+        />
+
+    <!-- need for image zoom / pinch -->
+    <ninja.cyplay.com.playretail_api.ui.custom.ViewPagerFixed
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/circles_page_indicator"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/gallery_close_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_gallery_close"
+        />
+
+</RelativeLayout>

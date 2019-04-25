@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="ninja.cyplay.com.playretail_api.ui.fragment.ProductShortDescriptionFragment"
+            android:id="@+id/fragment_product_short_description"
+            />
+
+        <!--
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="ninja.cyplay.com.playretail_api.ui.fragment.ProductShareActionBarFragment"
+            android:id="@+id/fragment_product_share_action_bar"
+            />
+        -->
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="ninja.cyplay.com.playretail_api.ui.fragment.ProductLongDescriptionFragment"
+            android:id="@+id/fragment_product_long_description"
+            />
+
+    </LinearLayout>
+</ScrollView>

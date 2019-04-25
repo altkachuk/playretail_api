@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/empty_sales_history"
+            android:id="@+id/empty_string_text_view"
+            />
+
+        <ninja.cyplay.com.playretail_api.ui.component.MultiStateToggleButton
+            android:id="@+id/purchase_navigation_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            />
+
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scrollbars="none"
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            />
+
+    </LinearLayout>
+
+    <ninja.cyplay.com.playretail_api.ui.custom.FullScreenView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/full_screen_view"
+        />
+
+</RelativeLayout>

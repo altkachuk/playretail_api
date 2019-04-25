@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <ninja.cyplay.com.playretail_api.ui.custom.WSquareRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/product_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/icon_gallery_top_left"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_gallery_topleft"
+                />
+
+        </ninja.cyplay.com.playretail_api.ui.custom.WSquareRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/product_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/product_bd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:textOn=""
+                    android:textOff=""
+                    android:id="@+id/button_dislike"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/icon_dislike_state"
+                    />
+
+                <ToggleButton
+                    android:textOn=""
+                    android:textOff=""
+                    android:id="@+id/button_like"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_like_state"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/button_share_screen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_sharescreen"
+            />
+
+        <ToggleButton
+            android:textOn=""
+            android:textOff=""
+            android:id="@+id/button_wishlist"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/icon_wishlist_state"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

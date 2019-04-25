@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ninja.cyplay.com.playretail_api">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Payleven -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-sdk tools:overrideLibrary="ninja.cyplay.com.apilibrary" />
+
+    <!-- <application android:allowBackup="true" android:label="@string/app_name" -->
+    <!-- android:supportsRtl="true"> -->
+    <!-- </application> -->
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+
+        <activity
+            android:name=".ui.activity.SplashScreenAcivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.SellersActivity"
+            android:label="@string/activity_sellers"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.DeviceRegistrationActivity"
+            android:label="@string/activity_device_registration"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.AuthenticationActivity"
+            android:label="@string/activity_authentication"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name=".ui.activity.FormActivity"
+            android:label="@string/activity_form"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.FormDynamicActivity"
+            android:label="@string/activity_form"
+            android:screenOrientation="sensor" />
+        <!-- android:windowSoftInputMode="stateHidden" -->
+
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:label="@string/activity_home"
+            android:screenOrientation="sensor"
+            android:theme="@style/NoActionBarWindowsNoElevation" />
+        <activity
+            android:name=".ui.activity.CatalogueActivity"
+            android:label="@string/activity_catalogue"
+            android:screenOrientation="sensor"
+            android:theme="@style/NoActionBarWindowsNoElevation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.ProductActivity"
+            android:label="@string/activity_product"
+            android:screenOrientation="sensor"
+            android:theme="@style/NoActionBarWindowsNoElevation" />
+        <activity
+            android:name=".ui.activity.CustomerHistoryActivity"
+            android:label="@string/activity_customer_history"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.InShopCustomerActivity"
+            android:label="@string/activity_in_shop_customer"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.FullScreenImageGalleryActivity"
+            android:label="@string/activity_gallery"
+            android:screenOrientation="sensor"
+            android:theme="@style/mytransparent.windowNoTitle" />
+        <activity
+            android:name=".ui.activity.CustomerSearchActivity"
+            android:label="@string/activity_customer_search"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".ui.activity.CustomerActivity"
+            android:label="@string/activity_customer"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.CustomerEditActivity"
+            android:label="@string/activity_customer"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.ContactManagerActivity"
+            android:label="@string/activity_contact_manager"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.TweetsActivity"
+            android:label="@string/activity_tweets_list"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.StatisticsActivity"
+            android:label="@string/activity_statistics"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.CropActivity"
+            android:label="@string/activity_crop"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.BarCodeScannerActivity"
+            android:label="@string/activity_scanner"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.BasketActivity"
+            android:label="@string/activity_basket"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.PaymentActivity"
+            android:label="@string/activity_payment"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.SignatureActivity"
+            android:label="@string/activity_signature"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.ReceipActivity"
+            android:label="@string/activity_receip"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.CatalogueFilterActivity"
+            android:label="@string/activity_filter"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.activity.SkaListActivity"
+            android:label="@string/activity_skuList"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name=".ui.activity.ProductPreviewActivity"
+            android:label="@string/activity_product"
+            android:theme="@style/Theme.Transparent"
+            android:screenOrientation="sensor"
+            />
+
+        <service
+            android:name=".model.service.ReportingService"
+            android:exported="false" />
+
+        <!-- Paylevel -->
+        <service
+            android:name="de.payleven.payment.PaylevenCommunicationService"
+            android:exported="false"
+            android:process=":payleven" />
+
+        <!-- Required for bluetooth communication with the terminal -->
+        <receiver android:name="com.adyen.adyenpos.receiver.BluetoothState">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.bluetooth.device.action.UUID" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required for bluetooth communication with the terminal -->
+        <service android:name="com.adyen.adyenpos.service.TerminalConnectIntentService" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4cfd394062f59b07e25dd455289aa00fec3530ac" />
+
+        <activity
+            android:name=".ui.activity.LoginActivityListActivity"
+            android:label="@string/title_loginactivity_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.LoginActivityDetailActivity"
+            android:label="@string/title_loginactivity_detail"
+            android:parentActivityName=".ui.activity.LoginActivityListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ninja.cyplay.com.playretail_api.ui.activity.LoginActivityListActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,46 @@
+<resources>
+
+    <string name="warning">Warning</string>
+    <string name="thank_you">Thank you!</string>
+
+    <string name="date_jan">January</string>
+    <string name="date_feb">February</string>
+    <string name="date_mar">March</string>
+    <string name="date_apr">April</string>
+    <string name="date_may">May</string>
+    <string name="date_jun">June</string>
+    <string name="date_jul">July</string>
+    <string name="date_aug">August</string>
+    <string name="date_sep">September</string>
+    <string name="date_oct">October</string>
+    <string name="date_nov">November</string>
+    <string name="date_dec">December</string>
+
+    <string name="app_version_warning_popup_title">version warning</string>
+    <string name="app_version_error_popup_title">version error</string>
+
+    <string name="open_location_settings">Settings</string>
+    <string name="bluetooth_error_title">Bluetooth Error</string>
+    <string name="bluetooth_error_message">Please activate the bluetooth and pair your device with the Payment Terminal</string>
+    <string name="bluetooth_open_settings">Settings</string>
+    <string name="location_error_title">Location Error</string>
+    <string name="location_error_message">Please activate the Location Services in your device settings</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="ask_sure">Do you really want to leave the application?</string>
+
+    <!-- Offers Strings -->
+    <string name="offer_1">DISCOUNT COUPONS</string>
+    <string name="offer_2">GOLD GIFT SHOP</string>
+    <string name="offer_3">ANNIVERSARY OFFERS</string>
+    <string name="offer_4">SPECIAL OFFERS</string>
+    <string name="offer_5">GIFTS OFFERS</string>
+
+    <!-- Bar Code Mapping -->
+    <string name="scan_all">Scan</string>
+    <string name="scan_prod">Product Scan</string>
+    <string name="scan_customer">Customer Card Scan</string>
+    <string name="scan_prod_or_empty_card">Scan</string>
+
+</resources>

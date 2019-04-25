@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/form_progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="1.0">
+
+    </LinearLayout>
+
+    <ninja.cyplay.com.playretail_api.ui.component.NonSwipeableViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+</LinearLayout>

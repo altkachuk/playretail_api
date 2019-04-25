@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ninja.cyplay.com.apilibrary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true">
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="playretail_api_reporting.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="false" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="ninja.cyplay.com.apilibrary" />
+
+        <receiver
+            android:name=".models.service.ReportDataAlarmReceiver"
+            android:exported="false"></receiver>
+
+        <receiver
+            android:name=".models.service.ActionEventAlarmReceiver"
+            android:exported="false"></receiver>
+
+    </application>
+
+</manifest>

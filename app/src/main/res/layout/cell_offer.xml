@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="2dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardUseCompatPadding="true"
+
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ninja.cyplay.com.playretail_api.ui.component.AutoResizeTextView
+                android:id="@+id/offer_sub_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14sp"
+                />
+
+            <ninja.cyplay.com.playretail_api.ui.component.AutoResizeTextView
+                android:id="@+id/offer_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

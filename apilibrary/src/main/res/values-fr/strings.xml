@@ -1,0 +1,46 @@
+<resources>
+
+    <string name="warning">Attention</string>
+    <string name="thank_you">Merci!</string>
+
+    <string name="date_jan">Janvier</string>
+    <string name="date_feb">Février</string>
+    <string name="date_mar">Mars</string>
+    <string name="date_apr">Avril</string>
+    <string name="date_may">Mai</string>
+    <string name="date_jun">Juin</string>
+    <string name="date_jul">Juillet</string>
+    <string name="date_aug">Août</string>
+    <string name="date_sep">Septembre</string>
+    <string name="date_oct">Octobre</string>
+    <string name="date_nov">Novembre</string>
+    <string name="date_dec">Décembre</string>
+
+    <string name="app_version_warning_popup_title">version warning</string>
+    <string name="app_version_error_popup_title">version error</string>
+
+    <string name="open_location_settings">Settings</string>
+    <string name="bluetooth_error_title">Bluetooth Error</string>
+    <string name="bluetooth_error_message">Please activate the bluetooth and pair your device with the Payment Terminal</string>
+    <string name="bluetooth_open_settings">Settings</string>
+    <string name="location_error_title">Location Error</string>
+    <string name="location_error_message">Please activate the Location Services in your device settings</string>
+
+    <string name="cancel">Annuler</string>
+    <string name="confirm">Confirmer</string>
+    <string name="ask_sure">Souhaitez-vous réellement quitter l\'application?</string>
+
+    <!-- Offers Strings -->
+    <string name="offer_1">DISCOUNT COUPONS</string>
+    <string name="offer_2">GOLD GIFT SHOP</string>
+    <string name="offer_3">ANNIVERSARY OFFERS</string>
+    <string name="offer_4">SPECIAL OFFERS</string>
+    <string name="offer_5">GIFTS OFFERS</string>
+
+    <!-- Bar Code Mapping -->
+    <string name="scan_all">Scan</string>
+    <string name="scan_prod">Scan produit</string>
+    <string name="scan_customer">Scan client</string>
+    <string name="scan_prod_or_empty_card">Scan</string>
+
+</resources>

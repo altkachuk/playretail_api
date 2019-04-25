@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/error_view"
+            android:visibility="gone"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:background="#ff9900">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/reload_error_msg"
+                android:id="@+id/error_view_txt"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="visible"
+                android:textSize="12sp"
+                android:layout_weight="0.4"
+                android:textColor="#ffffff" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/error_view_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reload_button_text"
+                    android:textSize="14sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:textColor="@color/cyplay_light_blue"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <ProgressBar
+                    style="@android:style/Widget.Holo.Light.ProgressBar.Large"
+                    android:id="@+id/progress_bar_reconnect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tweet_list_view"
+            android:layout_weight="0.1"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:visibility="visible">
+
+            <ProgressBar
+                style="@android:style/Widget.Holo.Light.ProgressBar.Large"
+                android:id="@+id/progress_bar_comp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:visibility="visible"
+                android:layout_gravity="center|clip_horizontal|clip_vertical" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/empty_view"
+            android:visibility="gone"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_no_tweet"
+                android:id="@+id/empty_view_txt"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ninja.cyplay.com.playretail_api.ui.custom.StatsOneCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stats_one"
+            />
+
+        <!--<ninja.cyplay.com.playretail_api.ui.custom.StatsOneCardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/stats_two"-->
+            <!--/>-->
+
+    </LinearLayout>
+
+</ScrollView>
+
+

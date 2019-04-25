@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Recap:"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardElevation="2dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/recap_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Total:"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardElevation="2dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+                android:padding="10dp">
+
+                <ninja.cyplay.com.playretail_api.ui.component.AutoResizeTextView
+                    android:id="@+id/total_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="26sp"
+                    />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="TPE:"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardElevation="2dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ninja.cyplay.com.playretail_api.ui.component.AutoResizeTextView
+                        android:id="@+id/choose_your_device_text_view"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:text="Choose your device"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_replay_black_24dp"
+                            android:id="@+id/reload_paired_device_list"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <Spinner
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/device_paired_spinner"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardElevation="2dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/valid_device_selection_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Start Payment"
+                    />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

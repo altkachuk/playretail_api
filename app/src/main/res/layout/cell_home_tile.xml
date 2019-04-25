@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="2dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardUseCompatPadding="true" >
+
+    <ninja.cyplay.com.playretail_api.ui.custom.WSquareLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/home_tile_root">
+
+        <FrameLayout
+            android:id="@+id/image_frame"
+            android:background="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/home_tile_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/badger"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    />
+                
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_title_background"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/home_tile_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                />
+
+        </FrameLayout>
+
+    </ninja.cyplay.com.playretail_api.ui.custom.WSquareLinearLayout>
+
+</android.support.v7.widget.CardView>

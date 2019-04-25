@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:background="@color/White"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ninja.cyplay.com.playretail_api.ui.custom.WSquareRelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:id="@+id/product_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/icon_gallery_top_left"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_gallery_topleft"
+                    />
+
+            </ninja.cyplay.com.playretail_api.ui.custom.WSquareRelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/product_cat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/product_bd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content">
+
+                        <ToggleButton
+                            android:textOn=""
+                            android:textOff=""
+                            android:id="@+id/button_dislike"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:background="@drawable/icon_dislike_state"
+                            />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content">
+
+                        <ToggleButton
+                            android:textOn=""
+                            android:textOff=""
+                            android:id="@+id/button_like"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/icon_like_state"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:background="@color/White"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/button_share_screen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_sharescreen"
+                    android:layout_gravity="center"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:textOn=""
+                    android:textOff=""
+                    android:id="@+id/button_wishlist"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/icon_wishlist_state"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:textOn=""
+                    android:textOff=""
+                    android:id="@+id/button_email"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/icon_email_state"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

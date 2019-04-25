@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/authentication_pin_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-400dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        />
+
+    <RelativeLayout
+        android:id="@+id/authentication_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/DarkGray"
+        android:layout_alignParentTop="true">
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:layout_below="@id/authentication_top_header">
+
+        <LinearLayout
+            android:id="@+id/password_custom_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--<ninja.cyplay.com.playretail_api.ui.custom.SquareFrameLayoutWithShadow-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/form_circle_shape_unselected"-->
+        <!--android:layout_below="@id/authentication_top_header"-->
+        <!--android:layout_marginTop="-50dp"-->
+        <!--android:layout_centerHorizontal="true">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="VF"-->
+            <!--android:textColor="@color/White"-->
+            <!--android:gravity="center"-->
+            <!--/>-->
+
+    <!--</ninja.cyplay.com.playretail_api.ui.custom.SquareFrameLayoutWithShadow>-->
+
+
+    <ninja.cyplay.com.playretail_api.ui.custom.SquareTextView
+        android:id="@+id/seller_initials"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authentication_top_header"
+        android:layout_marginTop="-50dp"
+        android:layout_centerHorizontal="true"
+        android:text="VF"
+        android:background="@drawable/seller_choice_shape"
+        android:textColor="@color/White"
+        android:gravity="center"
+        />
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ninja.cyplay.com.playretail_api.ui.custom.SquareTextView
+                android:id="@+id/seller_initials"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seller_choice_shape"
+                android:textColor="@color/White"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/password_custom_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+-->
+
+        <!-- Hide edittext to be able to use keyboard on it
+           (not editable if invisible or gone) -->
+
+<!--
+        <EditText
+            android:id="@+id/authentication_pin_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-400dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberPassword" />
+    </RelativeLayout>
+-->
+
+</RelativeLayout>

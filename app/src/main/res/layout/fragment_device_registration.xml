@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+
+
+<LinearLayout
+    android:id="@+id/page_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Spinner
+        android:id="@+id/config_countries_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:spinnerMode="dialog" />
+
+    <Spinner
+        android:id="@+id/config_shops_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:spinnerMode="dialog" />
+
+    <Button
+        android:id="@+id/attach_button"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:text="Save" />
+
+</LinearLayout>
+
+
+</FrameLayout>

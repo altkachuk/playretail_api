@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ninja.cyplay.com.playretail_api.ui.custom.CustomerProfileBasicInfoCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:id="@+id/customer_basic_info_container"
+        />
+
+    <ninja.cyplay.com.playretail_api.ui.custom.CustomerProfileRecapCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:id="@+id/customer_recap_container"
+        />
+
+    <ninja.cyplay.com.playretail_api.ui.custom.CustomerEditProfileCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:id="@+id/customer_edit_info_container"
+        />
+
+</LinearLayout>

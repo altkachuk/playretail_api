@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ninja.cyplay.com.playretail_api.ui.custom.SquareFrameLayoutWithShadow
+        android:id="@+id/circle_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:elevation="2dp"
+        android:background="@drawable/form_circle_shape_unselected">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/icon_image_view"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_email_black"
+            />
+
+        <!--<TextView-->
+            <!--android:id="@+id/circle_text_view"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="18sp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--/>-->
+
+    </ninja.cyplay.com.playretail_api.ui.custom.SquareFrameLayoutWithShadow>
+
+</LinearLayout>

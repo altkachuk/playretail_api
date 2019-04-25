@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ninja.cyplay.com.playretail_api.ui.custom.SquareTextView
+        android:id="@+id/sellerCellInitials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/seller_choice_shape"
+        android:textColor="@color/White"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/sellerCellFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:textSize="14sp"
+        android:lines="1"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/sellerCellLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:textSize="14sp"
+        android:lines="1"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center" />
+
+</LinearLayout>

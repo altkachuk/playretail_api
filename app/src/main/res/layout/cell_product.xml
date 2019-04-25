@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+    <!-- Left View -->
+      <LinearLayout
+         android:id="@+id/left_swipe_view"
+         android:layout_width="110dp"
+         android:layout_height="match_parent"
+         android:clickable="false"
+         android:gravity="center"
+         android:orientation="horizontal">
+
+         <ImageView
+             android:id="@+id/button_pickpup"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_gravity="center"
+             android:scaleType="fitXY"
+             android:src="@drawable/ic_pickup"
+             />
+
+         </LinearLayout>
+     <!-- Left View -->
+
+    <!-- Right View -->
+    <LinearLayout
+        android:id="@+id/right_swipe_view"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/button_dislike"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_dislike"
+            />
+
+        <ImageView
+            android:id="@+id/button_like"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_like"
+            />
+
+    </LinearLayout>
+    <!-- Right View -->
+
+    <!-- Surface View  -->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true"
+        >
+
+        <ninja.cyplay.com.playretail_api.ui.custom.WSquareRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/product_content_layout"
+            android:padding="5dp"
+            android:gravity="center">
+
+
+
+            <ImageView
+                android:id="@+id/product_cell_picture"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <ninja.cyplay.com.playretail_api.ui.component.AutoResizeTextView
+                    android:id="@+id/product_cell_cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+
+                <ninja.cyplay.com.playretail_api.ui.component.AutoResizeTextView
+                    android:id="@+id/product_cell_pn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ninja.cyplay.com.playretail_api.ui.component.AutoResizeTextView
+                    android:id="@+id/product_cell_bd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+
+
+        <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_action_next_item" />
+
+                <ImageView
+                    android:id="@+id/product_cell_liked"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="2dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/icon_recurring_product"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_recurring_product_topright"
+                android:visibility="gone" />
+        </ninja.cyplay.com.playretail_api.ui.custom.WSquareRelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+    <!-- Surface View  -->
+
+</com.daimajia.swipe.SwipeLayout>
+
